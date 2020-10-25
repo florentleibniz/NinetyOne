@@ -128,7 +128,7 @@ test_input_3 = 'Variables reported as having a missing type #65678'
 test_input_4 = 'Interactive and printable 10022 ZIP code'
 test_input_5 = 'The database has 66723107008'
 test_input_6 = 'I received 23 456,9 KGs'
-test_input_7 = 'South Africa is 122000000 square kiolmetre with a population of 57780000'
+test_input_7 = 'South Africa is 1220000 square kiolmetre with a population of 57780000'
 
 text2nums2words(test_input_1)
 text2nums2words(test_input_2)
