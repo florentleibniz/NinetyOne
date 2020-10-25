@@ -3,11 +3,7 @@
 
 Python script contains three functions that convert number(s) into words.
 
-**1. num2words():**
-
-Takes an integer input and returns it in word form, e.g., given the number
-1234 as an input, it returns the outpout "one thousand, two hundred, 
-and thirty-four" This problem can be broken down into .three cases:
+**1. num2words():** Takes an integer input and returns it in word form, e.g., given the number 1234 as an input, it returns the outpout "one thousand, two hundred, and thirty-four" This problem can be broken down into three cases:
 
 **Case 1:** When num < 20, we return the number directly as it is the index in the list object _less_20_
    
