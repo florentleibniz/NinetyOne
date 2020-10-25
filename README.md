@@ -22,5 +22,5 @@ _text2nums2words()_ but takes a file path to .txt file as an input
 
 ```python
 import sys
-num2word(536) # returns 'five hundred and thirty-six'	num2word(536) # returns 'five hundred and thirty-six'
+num2word(536) # returns 'five hundred and thirty-six'
 text2nums2words('The pump is 536 deep underground') # returns 'five hundred and thirty-six'
