@@ -1,11 +1,9 @@
-git remote add origin https://github.com/florentleibniz/NinetyOne.git
-
 """
 ---------------------------------
 Ninety One Python Code Submission
 ---------------------------------
 Jerome Leibovici
-24 October 2020
+25 October 2020
 --------------------------------
 """
 
@@ -37,10 +35,10 @@ and thirty-four"
 Case 3 requires us to also correctly place commas and 'and' in their 
 appropriate points in the returned text. Numbers greater than 99, which contain 
 numbers 99 or less must have 'and' before them, there is an if-else statement 
-which does this by indetifying numbers less than 100 in case 3
+which does this by identifying numbers less than 100 in case 3
 """
 
-def num2word(num): 
+def num2words(num): 
     #Define list objects and dictionary for pivots
     less_20 = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 
                'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 
@@ -62,9 +60,9 @@ def num2word(num):
     pivot = max([key for key in more_100.keys() if key <= num]) 
 
     if num%pivot==0:
-        return num2word((int)(num/pivot)) + ' ' + more_100[pivot] + ' '
+        return num2words((int)(num/pivot)) + ' ' + more_100[pivot] + ' '
     else:
-        return num2word((int)(num/pivot)) + ' ' + more_100[pivot] + (' and ' if num%pivot < 100 else ', ') + num2word(num%pivot) 
+        return num2words((int)(num/pivot)) + ' ' + more_100[pivot] + (' and ' if num%pivot < 100 else ', ') + num2words(num%pivot) 
 
 """
 Whilst num2word can convert integers to words, text2nums2words takes text as an 
@@ -108,7 +106,7 @@ def text2nums2words(text):
     if len(num_list) == 0:
         return sys.stdout.write('no numbers found'+'\n')
     for num in num_list:
-        sys.stdout.write(num2word(num)+'\n')
+        sys.stdout.write(num2words(num)+'\n')
 
 """
 file2text2nums2words() - excuse the long function name! - is akin to 
